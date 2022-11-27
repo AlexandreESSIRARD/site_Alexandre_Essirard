@@ -1,0 +1,182 @@
+@import url(animations.css);
+@import url(bouton.css);
+@import url(transitions.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+   
+    
+}
+
+.navig {
+    min-height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    gap:40px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+}
+
+h1{
+    color:whitesmoke;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.navig img{
+    margin-left:70px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+ul{
+    display:flex;
+    font-size: 17px;
+    margin-left: 120px;
+    gap:10px;
+    
+}
+
+.navig a{
+    color: white;
+    margin-left: 50px;
+    text-decoration: none;
+   
+}
+
+.navig a:hover{
+    color: red;
+    transition: 2s;
+}
+
+#carouselExampleCaptions{ 
+    width:100%;
+    margin: auto;
+ }
+ .carousel-item img{
+     width:50%;
+     height:auto;
+ }
+ 
+.presentation .textep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:40px;
+    align-items: center;
+    padding: 50px;
+}
+
+.presentation h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+
+.presentation img{ 
+    border-radius: 50%;
+    bottom:200px;
+    object-fit: cover;
+}
+
+.section1 h4{
+    font-size: 40px ;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.section1 img{
+   margin-left: 40px;
+   border-radius: 5px;
+   object-fit: cover;
+
+}
+
+.section1>div{
+    display: flex;
+}
+
+
+
+section .texte{
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+.grid h5{
+    font-size: 40px ;
+    text-align: center;
+    padding:40px;
+
+}
+
+.grid img{
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.grid>div{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 2fr;
+    padding-left:40px;
+}
+
+.section3 h3{
+    font-size: 40px ;
+}
+
+
+ @media screen and (max-width:800px){
+    .navig ul{
+        display: none;
+    }
+
+    .navig ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .navig {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .section img{
+        width: 100%;
+        max-width: 800px;
+    }
+    .section1 div{
+        flex-wrap: wrap;
+
+    }
+    
+    
+    
+    .grid div{
+        grid-template-columns: 1fr;
+    }
+}

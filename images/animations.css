@@ -1,0 +1,40 @@
+.rotate{
+    animation: tourne 15s linear infinite;
+    display: block;
+
+}
+
+@keyframes tourne {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+ .texte p{
+    animation-duration: 15s ;
+    animation-name: entree;
+    animation-fill-mode: forwards;
+
+  }
+  
+  @keyframes entree {
+    0%{
+      margin-left: 100%;
+      width: 120%;
+    }
+    75%{
+      font-size: 100%;
+      margin-left: 25%;
+      width: 100%;
+    }
+  
+    100% {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

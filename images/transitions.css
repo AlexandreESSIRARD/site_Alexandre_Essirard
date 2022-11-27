@@ -1,0 +1,33 @@
+a.bouton:hover{
+    color:black;
+    transition: 2s;
+}
+
+.bouton {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    animation-fill-mode: forwards;
+    width: 140px;
+    height: 50px;
+    background-color:red;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+  }
+  
+  .bouton:hover {
+    background-color: #f5be50;
+    width: 200px;
+    height: 200px;
+    rotate: 180deg;
+  }
+
+  .presentation img {
+    font-size: 8em;
+    filter: grayscale(100%);
+    transition: filter 450ms ease;
+  }
+  
+  .presentation img:is(:hover, :focus) {
+    filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
+  }
+  
